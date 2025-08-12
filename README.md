@@ -12,46 +12,27 @@ Simple CLI menu – Type disable or activate and the tool does the rest.
 
 Fast & lightweight – Written in C, compiled to a small executable.
 
-📸 Screenshot
-(Optional – add a screenshot of the program running here)
-
 🛠 Installation
-Clone this repository:
-
-bash
-Copier
-Modifier
+**Clone this repository:**
 git clone https://github.com/saysaa/fastDisableDefender.git
-Compile the program (example with MinGW):
-
-bash
-Copier
-Modifier
+**Compile the program (example with MinGW):**
 gcc main.c -o fastDisableDefender.exe
-Run the program:
-
-bash
-Copier
-Modifier
+**Run the program:**
 fastDisableDefender.exe
+
+
 💻 Usage
 When launched, you’ll see:
-
-bash
-Copier
-Modifier
 'activate' <> 'disable'
 >>
 Type disable → Turns off Windows Defender real-time monitoring and the Windows Firewall.
 
 Type activate → Turns on Windows Defender real-time monitoring and the Windows Firewall.
 
-⚠ Disclaimer
+**⚠ Disclaimer**
 Disabling antivirus and firewall protection makes your system vulnerable.
 Only use this tool in a safe and controlled environment.
 The author is not responsible for any damage or security breaches caused by misuse.
-
-
 
 Notes
 Disabling antivirus and firewall protection makes your system vulnerable — only use this tool in safe, controlled environments.
