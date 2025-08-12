@@ -1,9 +1,9 @@
-fastDisableDefender
 fastDisableDefender is a lightweight Windows utility written in C that allows you to quickly enable or disable Windows Defender Real-Time Protection and the Windows Firewall from a simple command-line menu.
 
 It’s designed for developers, testers, and advanced users who often encounter false positives when running custom applications, without having to dig into Windows settings each time.
 
 ✨ Features
+
 One command to toggle security – Quickly disable or enable Defender and Firewall.
 
 Automatic admin rights – The program requests elevation via UAC if not already running as administrator.
@@ -18,6 +18,7 @@ https://github.com/saysaa/fastDisableDefender/releases
 
 💻 Usage
 When launched, you’ll see:
+
 'activate' <> 'disable'
 >>
 Type disable → Turns off Windows Defender real-time monitoring and the Windows Firewall.
@@ -25,11 +26,13 @@ Type disable → Turns off Windows Defender real-time monitoring and the Windows
 Type activate → Turns on Windows Defender real-time monitoring and the Windows Firewall.
 
 **⚠ Disclaimer**
+
 Disabling antivirus and firewall protection makes your system vulnerable.
 Only use this tool in a safe and controlled environment.
 The author is not responsible for any damage or security breaches caused by misuse.
 
 Notes
+
 Disabling antivirus and firewall protection makes your system vulnerable — only use this tool in safe, controlled environments.
 
 This tool does not uninstall Windows Defender; it only toggles its real-time monitoring feature.
