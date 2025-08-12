@@ -1,5 +1,4 @@
-fastDisableDefender
-fastDisableDefender is a small C utility that allows you to quickly enable or disable Windows Defender Real-Time Protection and the Windows Firewall without having to navigate through multiple Windows menus.
+**fastDisableDefender** is a small C utility that allows you to quickly enable or disable Windows Defender Real-Time Protection and the Windows Firewall without having to navigate through multiple Windows menus.
 
 The tool is useful for developers or testers who often encounter false positives during software development or when running custom applications.
 
