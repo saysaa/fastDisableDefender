@@ -1,37 +1,57 @@
-**fastDisableDefender** is a small C utility that allows you to quickly enable or disable Windows Defender Real-Time Protection and the Windows Firewall without having to navigate through multiple Windows menus.
+fastDisableDefender
+fastDisableDefender is a lightweight Windows utility written in C that allows you to quickly enable or disable Windows Defender Real-Time Protection and the Windows Firewall from a simple command-line menu.
 
-The tool is useful for developers or testers who often encounter false positives during software development or when running custom applications.
+It’s designed for developers, testers, and advanced users who often encounter false positives when running custom applications, without having to dig into Windows settings each time.
 
-Features
-Automatic UAC elevation (asks for admin rights if not already elevated)
+✨ Features
+One command to toggle security – Quickly disable or enable Defender and Firewall.
 
-Toggle between:
+Automatic admin rights – The program requests elevation via UAC if not already running as administrator.
 
-Disable: Turns off Windows Defender real-time monitoring and the Windows Firewall
+Simple CLI menu – Type disable or activate and the tool does the rest.
 
-Activate: Re-enables Windows Defender real-time monitoring and the Windows Firewall
+Fast & lightweight – Written in C, compiled to a small executable.
 
-Simple text-based menu interface
+📸 Screenshot
+(Optional – add a screenshot of the program running here)
 
-Fast execution for quick security changes
+🛠 Installation
+Clone this repository:
 
-Requirements
-Windows 10/11
+bash
+Copier
+Modifier
+git clone https://github.com/saysaa/fastDisableDefender.git
+Compile the program (example with MinGW):
 
-Administrator privileges
+bash
+Copier
+Modifier
+gcc main.c -o fastDisableDefender.exe
+Run the program:
 
-Windows PowerShell available in the system PATH
+bash
+Copier
+Modifier
+fastDisableDefender.exe
+💻 Usage
+When launched, you’ll see:
 
-Usage
-Compile the source code with any Windows C compiler (MinGW, MSVC, etc.).
+bash
+Copier
+Modifier
+'activate' <> 'disable'
+>>
+Type disable → Turns off Windows Defender real-time monitoring and the Windows Firewall.
 
-Run the executable — it will ask for admin rights if not already elevated.
+Type activate → Turns on Windows Defender real-time monitoring and the Windows Firewall.
 
-Type:
+⚠ Disclaimer
+Disabling antivirus and firewall protection makes your system vulnerable.
+Only use this tool in a safe and controlled environment.
+The author is not responsible for any damage or security breaches caused by misuse.
 
-disable → to turn off Defender & Firewall
 
-activate → to turn them back on
 
 Notes
 Disabling antivirus and firewall protection makes your system vulnerable — only use this tool in safe, controlled environments.
