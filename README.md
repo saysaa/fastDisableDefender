@@ -13,13 +13,7 @@ Simple CLI menu – Type disable or activate and the tool does the rest.
 Fast & lightweight – Written in C, compiled to a small executable.
 
 🛠 Installation
-**Clone this repository:**
-git clone https://github.com/saysaa/fastDisableDefender.git
-**Compile the program (example with MinGW):**
-gcc main.c -o fastDisableDefender.exe
-**Run the program:**
-fastDisableDefender.exe
-
+https://github.com/saysaa/fastDisableDefender/releases
 
 💻 Usage
 When launched, you’ll see:
