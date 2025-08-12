@@ -38,3 +38,5 @@ Disabling antivirus and firewall protection makes your system vulnerable — onl
 
 This tool does not uninstall Windows Defender; it only toggles its real-time monitoring feature.
 
+Leave the original name and do not change the program name in order to let the program do an elevation of privilege so that it can run as administrator
+
