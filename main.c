@@ -21,6 +21,25 @@ int IsRunAsAdmin() {
 }
 
 int main(void) {
+    // Récupère la fenêtre console
+    HWND hwnd = GetConsoleWindow();
+
+    // Charge l'icône depuis un fichier ICO
+    HICON hIcon = (HICON)LoadImage(
+        NULL,
+        "icon.ico",       // chemin vers ton fichier .ico
+        IMAGE_ICON,       // type image
+        32, 32,           // taille de l'icône
+        LR_LOADFROMFILE   // charge depuis un fichier
+    );
+
+    if (hIcon) {
+        // Définit l'icône petite (barre de titre)
+        SendMessage(hwnd, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+        // Définit l'icône grande (Alt+Tab et barre des tâches)
+        SendMessage(hwnd, WM_SETICON, ICON_BIG, (LPARAM)hIcon);
+    }
+
     if (!IsRunAsAdmin()) {
         SHELLEXECUTEINFO sei = { sizeof(sei) };
         sei.lpVerb = "runas";
